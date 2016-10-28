@@ -34,8 +34,8 @@ app.get('/callback', (req, res) => {
   const code = req.query.code;
   const options = {
     code,
+    
     //there was a line missing here with the redirect_uri that made my version of the example functional.  
-    //The trailing comma on the line above indicates something was missed
     redirect_uri: 'http://localhost:3000/callback'
   
   };
